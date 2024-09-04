@@ -1,10 +1,10 @@
 - name: variables from task level
   hosts: web
   tasks:
-    - name: print the variables from task level
-      vars:
-        course: "devops with aws"
-      ansible.biultin.debug:
-        msg: " hi i am learing {{course}}" 
+  - name: print the variables from task level
+    vars:
+      course: "devops with aws"
+    ansible.biultin.debug:
+      msg: " hi i am learing {{course}}" 
 
 
