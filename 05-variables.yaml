@@ -5,4 +5,6 @@
       vars:
         course: "devops with aws"
       ansible.biultin.debug:
-        msg " hi i am learing {{course}}" 
+        msg: " hi i am learing {{course}}" 
+
+
