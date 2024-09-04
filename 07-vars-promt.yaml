@@ -6,6 +6,6 @@
   - name: duration
     promt: enter the duration
   tasks:
-    - name: varsiables from promt
-      ansible.biultin.debug:
-        msg: "hi i am learing {{course}},with duration {{duration}}"
+  - name: varsiables from promt
+    ansible.biultin.debug:
+      msg: "hi i am learing {{course}},with duration {{duration}}"
