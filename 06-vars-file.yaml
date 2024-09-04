@@ -7,12 +7,3 @@
     ansible.builtin.debug:
       msg: "Hi, I am learning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
 
-
-# - name: variables from files
-#   hosts: web
-#   vars_files:
-#   - vars.yaml
-#   tasks:
-#   - name: print the course information
-#     ansible.builtin.debug:
-#       msg: "Hi, I am learning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
