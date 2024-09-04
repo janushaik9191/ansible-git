@@ -1,8 +1,8 @@
-- name: vars from a file
+- name: variables from a file
   hosts: web
   tasks:
   - name: variables from file 
     var:
-      vars.yaml
+      -vars.yaml
     ansible.builtin.debug:
-     msg "hi i am learing {{course}}, with duration{{duration}}, by {{trainer}}"
+     msg: "hi i am learing {{course}}, with duration{{duration}}, by {{trainer}}"
