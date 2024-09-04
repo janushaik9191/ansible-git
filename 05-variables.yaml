@@ -4,7 +4,7 @@
   - name: print the variables from task level
     vars:
       course: "devops with aws"
-    ansible.biultin.debug:
+      ansible.biultin.debug:
       msg: " hi i am learing {{course}}" 
 
 
