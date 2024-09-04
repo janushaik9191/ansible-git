@@ -2,9 +2,20 @@
   hosts: web
   vars: 
     course: "devops with aws"
-    duration: 120 HRS
+    duration: "120 HRS"
     trainer: "shivakumar raddy"
   tasks:
-    - name: print the variables from play level
-      ansible.builtin.debug:
+  - name: print the variables from play level
+    ansible.builtin.debug:
       msg: "hi i am learnig {{course}}, with duration of {{duration}},by the trainer {{trainer}}"
+
+# - name: variables to print
+#   hosts: web
+#   vars:
+#     COURSE: "DevOps with AWS"
+#     DURATION: "120HRS"
+#     TRAINER: "Sivakumar Reddy M"
+#   tasks:
+#   - name: print the information
+#     ansible.builtin.debug:
+#       msg: "Hi, I am learning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
