@@ -6,8 +6,8 @@
   - name: duration
     prompt: enter the duration
   tasks:
-  - name: varsiables from promt
-    ansible.biultin.debug:
+  - name: variables from promt
+    ansible.builtin.debug:
       msg: "hi i am learing {{course}},with duration {{duration}}"
 
 # - name: variables from prompt
