@@ -4,8 +4,8 @@
   tasks:
   - name: installing the packages by loops
     ansible.builtin.package:
-      msg: "install packages one by one {{ item }} "
-    loops:
+      msg: "install packages one by one {{ item }}"
+    loop:
     - git
     - mysql
     - postfix
