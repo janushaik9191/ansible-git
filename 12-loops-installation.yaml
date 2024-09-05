@@ -4,6 +4,8 @@
   tasks:
   - name: installing the packages by loops
     ansible.builtin.package:
+      name: "{{item}}"
+      state: present
       msg: "install packages one by one {{ item }}"
     loop:
     - git
