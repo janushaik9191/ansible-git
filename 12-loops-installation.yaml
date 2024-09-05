@@ -1,0 +1,12 @@
+- name: installation using loops
+  hosts: web
+  become: yes
+  tasks:
+  - name: installing the packages by loops
+    ansible.builtin.package:
+      msg: "install packages one by one {{ item }} "
+    loops:
+    - git
+    - mysql
+    - postfix
+    - httpd 
