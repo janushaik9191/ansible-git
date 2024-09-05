@@ -1,0 +1,9 @@
+- name: demo on filters
+  hosts: local
+  localhost: local
+  vars:
+    greeting: "hello meerjan"
+  tasks:
+  - name: print upper case frpm lower
+    ansible.builtin.package:
+     msg: "{{greeting | uppercase}}"
