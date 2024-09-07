@@ -7,4 +7,4 @@
   - name: to check weather the number is greterthen 10 or not
     ansible.builtin.debug:
       msg: "the given number is less then 10 "
-    when: number > 10 
+    when: number < 10 
