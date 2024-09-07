@@ -5,7 +5,7 @@
   - name: create user if not exist
     ansible.builtin.command: id expence
     rigister: user
-    ignore_errors: true
+    ignore_errors: True
   - name: create user
     ansible.builtin.command: useradd expense
     when: user.rc != 0
