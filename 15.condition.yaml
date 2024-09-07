@@ -8,12 +8,12 @@
   tasks:
   - name: print the number is less then 10
     ansible.builtin.debug:
-      msg: "the given {{ my_number }} is less then 10"
+      msg: "the given number {{ my_number }} is less then 10"
     when: my_number | int < 10
 
-  - name: print the number is less then 10
+  - name: print the number is greater then 10
     ansible.builtin.debug:
-      msg: "the given {{ my_number }} is less then 10"
+      msg: "the given number {{ my_number }} is less then 10"
     when: my_number |  int > 10
 
     # - name: print this if greater than or equal to 10
