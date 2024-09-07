@@ -8,7 +8,7 @@
     ignore_errors: True
 
   - name: print the user info
-    ansible.builtin.command:
+    ansible.builtin.debug:
       msg: "user info :: {{ USER }}"
 
   - name: create user if not exist
