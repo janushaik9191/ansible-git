@@ -4,7 +4,7 @@
   tasks:
   - name: check user is exist or not
     ansible.builtin.command: id expense
-    rigister: USER
+    register: USER
     ignore_errors: True
 
   - name: print the user info
