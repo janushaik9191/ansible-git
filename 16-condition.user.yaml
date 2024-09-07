@@ -2,11 +2,11 @@
   hosts: web
   become: yes
   tasks:
-    - name: create user if not exist
-      ansible.builtin.command: id expence
-      rigister: user
-      ignore_errors: True
-    - name: create user
-      ansible.builtin.command: useradd expense
-      when: user.rc != 0
-  
+  - name: check user is exist
+    ansible.builtin.command: id expense
+    rigister: USER
+    ignore_errors: true
+
+  - name: create user 
+    ansible.builtin.command: useradd expense
+    when: USER.rc != 0
