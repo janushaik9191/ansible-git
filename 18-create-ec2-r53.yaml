@@ -29,8 +29,7 @@
     register: ec2_instances
 
   - name: print the output
-    ansible.builtin.debug:
-      msg: "{{ ec2_instances }}"
+    ansible.builtin.shell: ec2_instances > /tmp/ec2_instances.txt
 
   - name: create r53 private records
     amazon.aws.route53:
