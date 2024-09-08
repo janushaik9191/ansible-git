@@ -28,8 +28,8 @@
     loop: "{{ instances }}"
     register: ec2_instances
 
-  - name: print the output
-    ansible.builtin.shell: ec2_instances > /tmp/ec2_instances.txt
+  - name: redirect the output
+    ansible.builtin.shell: ec2_instances > /tmp/output.txt
 
   - name: create r53 private records
     amazon.aws.route53:
